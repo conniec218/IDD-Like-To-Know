@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useMemo } from 'react';
 import './MessagingPane.css'
+// import React, { useMemo } from 'react';
+import ReactWebChat, { createDirectLine } from 'botframework-webchat';
 import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap'
 import { TextField, Stylesheet } from '@fluentui/react';
 
@@ -22,11 +24,13 @@ class MessagingPane extends Component {
 
     render() {
         return(
-            <div className="messagingPane">
-                <InputGroup>
+            <div className="messagingPane" >
+            <iframe style={{width:750, height:480 }}
+            src='https://webchat.botframework.com/embed/rheaTestBot?s=w79RZTPPf20.O4iG3i3epNe1WezRBLZ9jaFmIvGEjwhUyTKD20e2caE'></iframe>
+                {/* <InputGroup>
                     <Input />
                     <InputGroupAddon addonType="prepend"><Button>That's all for now.</Button></InputGroupAddon>
-                </InputGroup>
+                </InputGroup> */}
             </div>
         )
     }

@@ -8,5 +8,8 @@
     background-color:#e0e0e3;
     border-radius: 15px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    height:480px; 
+    width:100vw;
+    align-items: center
 }
