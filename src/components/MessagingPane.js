@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useMemo } from 'react';
 import './MessagingPane.css'
+// import React, { useMemo } from 'react';
+import ReactWebChat, { createDirectLine } from 'botframework-webchat';
 import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap'
 import { TextField, Stylesheet } from '@fluentui/react';
 
@@ -22,7 +24,7 @@ class MessagingPane extends Component {
 
     render() {
         return(
-            <div className="messagingPane">
+            <div className="messagingPane" >
                 <InputGroup>
                     <Input />
                     <InputGroupAddon addonType="prepend"><Button>That's all for now.</Button></InputGroupAddon>
