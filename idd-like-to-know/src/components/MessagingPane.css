@@ -1,0 +1,12 @@
+.initialEntry {
+    height: 20vh
+}
+
+.messagingPane {
+    margin: 3vh;
+    padding: 3vh;
+    background-color:#e0e0e3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column
+}
